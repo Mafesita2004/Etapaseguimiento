@@ -12,6 +12,24 @@
             width: 89px;
             height: auto;
         }
+        .Aprendiz{
+            position: absolute;
+            top: 200px;
+            left: 500px;
+            width: 110px;
+            height: auto;
+        }
+        .Reporte{
+            position: absolute;
+            top: 200px;
+            left: 900px;
+            width: 93px;
+            height: auto;
+        }
+        .centrado{
+            text-align: center;
+        }
+       
 
     </style>
 </head>
@@ -19,8 +37,11 @@
     <form action="{{route('home')}}" method="POST" enctype="multipart/form-data">
         @csrf <!-- Agrega el token CSRF -->
         <img class= "logo" src = "{{asset('images/LOGO.jpeg')}}" alt = "logo">
-        <img class= "aprendiz" src = "{{asset('images.instructor/aprendiz_instructor.PNG)}}" alt = "Aprendiz">
-        
+        <img class= "Aprendiz" src = "{{asset('images/aprendiz_instructor.PNG')}}" alt = "Aprendiz">
+        <img class= "Reporte" src = "{{asset('images/reportes_instructor.PNG')}}" alt = "Reporte">
+    <div class="centrado">
+        <h1 >INSTRUCTOR</h1>
+    </div>
 
     </form>
 </body>
