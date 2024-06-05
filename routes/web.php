@@ -9,3 +9,5 @@ Route::get('/', function () {
 //RUTA LOGIN
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'loginStore'])->name('login.store');
+
+//Ruta Registro de aprendizaje que hace el Super admin
