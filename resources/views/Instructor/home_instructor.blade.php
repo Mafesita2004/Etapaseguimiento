@@ -42,6 +42,9 @@
     <div class="centrado">
         <h1 >INSTRUCTOR</h1>
     </div>
+    <div class="recuadro">
+        
+
 
     </form>
 </body>
