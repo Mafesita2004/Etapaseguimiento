@@ -8,6 +8,6 @@ class HomeInstructorController extends Controller
 {
     public function showhomeform()
     {
-        return view('home_instructor');
+        return view('home.instructor');
     }
 }

@@ -44,7 +44,7 @@
     </style>
 </head>
 <body>
-    <form action="{{route('home_instructor')}}"  method="POST" enctype="multipart/form-data">
+    <form action="{{route('home.instructor')}}"  method="POST" enctype="multipart/form-data">
         @csrf <!-- Agrega el token CSRF -->
         <h2>Login</h2>
         <input type="text" name="username" placeholder="Username" required>
