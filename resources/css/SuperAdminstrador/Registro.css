@@ -14,7 +14,8 @@ body {
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 h1 {
@@ -25,11 +26,13 @@ h1 {
 table {
     width: 100%;
     border-collapse: collapse;
+    margin-top: 20px;
 }
 
 th, td {
     padding: 10px;
     text-align: left;
+    border-bottom: 1px solid #ddd;
 }
 
 th {
@@ -39,7 +42,7 @@ th {
 input[type="text"],
 input[type="email"],
 input[type="password"] {
-    width: calc(100% - 20px);
+    width: 100%;
     padding: 10px;
     margin: 5px 0;
     border: 1px solid #ccc;
@@ -59,8 +62,4 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #218838;
-}
-
-.submit-cell {
-    text-align: center;
 }
