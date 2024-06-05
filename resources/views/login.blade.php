@@ -12,7 +12,26 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f0f0f0;
+            background-image: url('{{ asset('images/muñeco.png') }}');
+            background-position: 200px 100px; /* Posición (x:240, y:226) */
+            background-size: 500px 500px; /* Tamaño (w:673, h:922) */
+            background-repeat: no-repeat;
+            position: relative;
+           
+
+        }
+        
+        /*imagen logo adicional */
+        body::before{
+            content:
+        }
+        /* Estilo adicional para el logo */
+        .logo {
+            position: absolute;
+            top: 10px; 
+            left: 96px; 
+            width: 89px; 
+            height: auto;
         }
         form {
             background-color: #fff;
@@ -49,6 +68,7 @@
         <input type="text" name="username" placeholder="Username" required>
         <input type="password" name="password" placeholder="Password" required>
         <button type="submit">Login</button>
+        <img class="logo" src="{{ asset('images/logo.jpeg') }}" alt="Logo">
     </form>
 </body>
 </html>
