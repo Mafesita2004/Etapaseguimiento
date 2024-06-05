@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeaprendizController;
 use App\Http\Controllers\LoginController;
 use Illuminate\Support\Facades\Route;
 
@@ -10,4 +11,8 @@ Route::get('/', function () {
 Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [LoginController::class, 'loginStore'])->name('login.store');
 
-//Ruta Registro de aprendizaje que hace el Super admin
+//RUTA HOME APRENDIZ
+Route::get('/homeaprendiz', [HomeaprendizController::class, 'showHomeaprendizForm'])->name('Homeaprendiz');
+Route::post('/homeaprendiz', [HomeAprendizController::class, 'homeaprendizStore'])->name('homeaprendiz.store');
+
+
