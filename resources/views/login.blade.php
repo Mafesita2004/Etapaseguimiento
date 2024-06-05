@@ -43,7 +43,7 @@
     </style>
 </head>
 <body>
-    <form action="/login" method="post">
+    <form action="{{route('login')}}"  method="POST" enctype="multipart/form-data">
         @csrf <!-- Agrega el token CSRF -->
         <h2>Login</h2>
         <input type="text" name="username" placeholder="Username" required>
