@@ -8,8 +8,8 @@
         .logo{
             position: absolute;
             top: 10px;
-            left: 96px;
-            width: 89px;
+            left: 70px;
+            width: 75px;
             height: auto;
         }
         .Aprendiz{
@@ -28,6 +28,20 @@
         }
         .centrado{
             text-align: center;
+
+            margin: 2rem;
+        }
+      
+        body{
+            margin: 20px;
+        }
+        .recuadro{
+            background-color: #E7E7E7;
+            
+            width: 1110px;
+            height: 500px;
+            margin: auto;
+            align-items: 1000px;
         }
        
 
@@ -42,7 +56,8 @@
     <div class="centrado">
         <h1 >INSTRUCTOR</h1>
     </div>
-    <div class="recuadro">
+    <div class="recuadro"></div>
+
         
 
 
